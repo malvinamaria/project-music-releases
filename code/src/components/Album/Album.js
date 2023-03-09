@@ -9,9 +9,9 @@ export const Album = (props) => {
   return (
     <>
       {albumsArray.map((item) => (
-        <div className="album-card" key={item.id}>
+        <div className="album-card">
           <div className="image-container">
-            <img src={item.images[1].url} className="album-image" alt="Cover" />
+            <img src={item.images[2].url} className="album-image" alt="Cover" />
             <SvgIcons />
           </div>
           <a className="album-name">{item.name}</a>
@@ -19,7 +19,6 @@ export const Album = (props) => {
             {item.artists.map((artist) => (
               <a
                 className="artist-name"
-                key={artist.id}
                 // eslint-disable-next-line react/jsx-closing-bracket-location
               >
                 <span>{artist.name}</span>
