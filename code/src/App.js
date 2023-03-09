@@ -1,23 +1,18 @@
 import React from 'react';
-// import { Albumcover } from 'components/Albumcover';
-import { Artists } from './components/Artists';
+import data from './data.json';
 
-// import data from './data.json';
-// import Header from "componenets/Header";
-// named component
-// import { Album } from './components/Album';
-// import { Artists } from './componenets/Artists';
-// import { Artist } from './componenets/Artists';
+import { Album } from './components/Album/Album';
+import './index.css';
+
+const albumsArray = data.albums.items;
+// console.log(data);
 
 export const App = () => {
   return (
-    <div>
-      <h1> albums </h1>
-      {/* <Album />  */}
-      <Artists />
-      {/* <div>
-        <Albumcover />
-      </div> */}
-    </div>
+    <main className="main-container">
+      <section className="album-container">
+        <Album albumsArray={albumsArray} />
+      </section>
+    </main>
   );
 };
