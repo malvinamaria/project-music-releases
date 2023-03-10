@@ -1,4 +1,4 @@
-  .album-wrapper {
+.album-wrapper {
   padding-top: 20px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -7,64 +7,73 @@
 .album-cover-div {
   display: flex;
   justify-content: center;
+  position: relative;
 }
-.album-cover {
-    width: 90%;
-    border-radius: 5%;
-    display: flex;
-    padding-top: 10px;
-  }
+/* position:relative >> add isvg-icons to every album cover container */
 
+.album-cover {
+  width: 90%;
+  border-radius: 5%;
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+}
 
 .album-name {
-    color: white;
-    font-weight: bold;
-    display: flex;
-    margin-top: 10px;
-    margin-left: 20px;
-    width:fit-content;
-  }
+  color: white;
+  font-weight: bold;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 20px;
+  width: fit-content;
+}
 
-  .artist-names-div {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    margin-left: 20px;
-    padding-bottom: 15px;
-    width: fit-content;
-    height: fit-content;
-  }
-  
-  .artist-name {
-    color: rgb(147, 147, 147);
-    width: fit-content;
-  }
+.artist-names-div {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-left: 20px;
+  padding-bottom: 15px;
+  width: fit-content;
+  height: fit-content;
+}
 
-  a {
-    color: rgb(147, 147, 147);
-    text-decoration: none;
-  }
+.artist-name {
+  color: rgb(147, 147, 147);
+  width: fit-content;
+}
 
-  a:hover {
-    color:lightgray;
-  }
+a {
+  color: rgb(147, 147, 147);
+  text-decoration: none;
+}
 
-  .single-album-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background-color: #171717;
-    border-radius: 5%;
-    gap: 10px;
-  }
+a:hover {
+  color: lightgray;
+}
 
+.single-album-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #171717;
+  border-radius: 5%;
+  gap: 10px;
+}
 
-  @media (min-width: 667px) and (max-width: 1024px) {
-    .album-wrapper {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-    }
+.svg-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .album-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
+}
 
 @media (min-width: 1025px) {
   .album-wrapper {
