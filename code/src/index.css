@@ -25,3 +25,9 @@ code {
 .albumcontainer-parent {
   margin: 15px 15px 15px 15px;
 }
+
+.album-cover-div:hover > .icon {
+  display: inline-block;
+  /* opacity: 1; */
+  z-index: 1;
+}
