@@ -4,11 +4,22 @@
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
 }
+
 .album-cover-div {
   display: flex;
   justify-content: center;
   position: relative;
+  z-index: 0;
 }
+
+.album-cover-div:hover {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  opacity: 10%;
+  transition: 0.3s;
+}
+
 /* position:relative >> add isvg-icons to every album cover container */
 
 .album-cover {
@@ -17,7 +28,21 @@
   display: flex;
   padding-top: 10px;
   justify-content: center;
+  /* z-index: 0; */
 }
+
+/* .album-cover:hover:hover .overlay {
+  opacity: 1;
+} */
+
+.album-cover-div:hover .icon {
+  display: inline-block;
+  opacity: 1;
+}
+
+/* .img-container:hover .icon {
+  opacity: 1;
+} */
 
 .album-name {
   color: white;
