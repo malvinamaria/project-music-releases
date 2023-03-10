@@ -9,7 +9,7 @@
   /* visibility: visible; */
   justify-content: center;
   align-items: center;
-  top: 45%;
+  top: 50%;
   gap: 20px;
   display: flex;
 }
@@ -29,42 +29,5 @@
 
 .icons-container {
   font-size: 2em;
-  background: transparent;
 }
 
-.icon {
-  display: none;
-}
-.icon {
-  transition: all 0.2s ease-in-out;
-}
-
-/* .icons-container:hover .icon {
-  opacity: 1;
-} */
-
-.album-cover-div {
-  position: relative;
-}
-
-.album-cover-div::before {
-  content: '';
-  z-index: 1;
-}
-
-/* .icon {
-  position: relative;
-  z-index: 2;
-  opacity: 0;
-  filter: invert(100%);
-  transition: opacity 0.3s ease-in-out;
-  color: white;
-} */
-
-.icon:hover {
-  transform: scale(1.5);
-}
-
-/* .album-cover-div:hover .icon {
-  stop-color: 1;
-} */
