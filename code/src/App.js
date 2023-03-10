@@ -1,23 +1,15 @@
 import React from 'react';
-// import { Albumcover } from 'components/Albumcover';
-import { Artists } from './components/Artists';
-
 // import data from './data.json';
-// import Header from "componenets/Header";
-// named component
-// import { Album } from './components/Album';
-// import { Artists } from './componenets/Artists';
-// import { Artist } from './componenets/Artists';
+// import Albumcover from './components/Albumcover/Albumcover';
+import { Header } from './components/Header/Header';
+// import { Album } from './components/Album/Album';
+import { Artists } from './components/Artists/Artists';
 
 export const App = () => {
   return (
-    <div>
-      <h1> albums </h1>
-      {/* <Album />  */}
+    <section className="albumcontainer-parent">
+      <Header />
       <Artists />
-      {/* <div>
-        <Albumcover />
-      </div> */}
-    </div>
+    </section>
   );
 };

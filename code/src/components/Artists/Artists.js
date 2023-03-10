@@ -1,0 +1,23 @@
+import React from 'react';
+import data from '../../data.json';
+import './Artists.css'
+
+export const Artists = () => {
+  return (
+    <div className="album-wrapper">
+      {data.albums.items.map((album) => {
+        return (
+          <div className="single-album-container" key={album.id}>
+            <div className="album-cover-div">
+              <img className="album-cover" alt="Album cover" src={album.images[0].url} />
+            </div>
+            <p className="album-name">{album.name}</p>
+            {album.artists.map((artist, index) => (
+              <span className="artist-name" key={artist.id}> <a href={`https://open.spotify.com/artist/${artist.id}`} target="blank_">{artist.name}</a> {index < album.artists.length - 1 && ', '}</span>
+            ))}
+          </div>
+        )
+      })}
+    </div>
+  );
+};
