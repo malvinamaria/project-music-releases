@@ -19,7 +19,7 @@
 .dots-icon:hover,
 .play-icon:hover {
   transform: scale(1.7);
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
   opacity: 100%;
 }
 
