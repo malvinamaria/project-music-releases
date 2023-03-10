@@ -1,32 +1,43 @@
   .album-wrapper {
-  padding-top: 10px;
+  padding-top: 20px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
 }
-
 .album-cover-div {
-  display: grid;
+  display: flex;
+  justify-content: center;
 }
-
 .album-cover {
-    width: 100%;
-    border-radius: 2%;
-    align-items: center;
+    width: 90%;
+    border-radius: 5%;
     display: flex;
-    justify-content: center;
-    position: relative;
+    padding-top: 10px;
   }
 
+
 .album-name {
-    color: rgb(147, 147, 147);
+    color: white;
+    font-weight: bold;
     display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    width:fit-content;
+  }
+
+  .artist-names-div {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-left: 20px;
+    padding-bottom: 15px;
+    width: fit-content;
+    height: fit-content;
   }
   
   .artist-name {
     color: rgb(147, 147, 147);
-    display: flex;
-    flex-direction: row;
+    width: fit-content;
   }
 
   a {
@@ -42,6 +53,9 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    background-color: #171717;
+    border-radius: 5%;
+    gap: 10px;
   }
 
 

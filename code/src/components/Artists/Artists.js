@@ -11,13 +11,17 @@ export const Artists = () => {
             <div className="album-cover-div">
               <img className="album-cover" alt="Album cover" src={album.images[0].url} />
             </div>
-            <p className="album-name">{album.name}</p>
-            {album.artists.map((artist, index) => (
-              <span className="artist-name" key={artist.id}> <a href={`https://open.spotify.com/artist/${artist.id}`} target="blank_">{artist.name}</a> {index < album.artists.length - 1 && ', '}</span>
-            ))}
+            <span className="album-name">{album.name}</span>
+            <div className="artist-names-div">
+              {album.artists.map((artist, index) => (
+                <span className="artist-name" key={artist.id}> <a href={`https://open.spotify.com/artist/${artist.id}`} target="blank_">{artist.name}</a>
+                  {index < album.artists.length - 1 && ', '}
+                </span>
+              ))}
+            </div>
           </div>
         )
-      })}
+      })};
     </div>
   );
 };
