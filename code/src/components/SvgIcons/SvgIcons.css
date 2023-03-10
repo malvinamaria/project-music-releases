@@ -3,3 +3,21 @@
   margin: 0 15px;
   opacity: 50%;
 }
+
+.icons-container {
+  position: absolute;
+  /* display: none; */
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  padding-left: 50px;
+}
+/* Absolute - the element is positioned absolutely to its first positioned parent. */
+
+.heart-icon:hover,
+.dots-icon:hover,
+.play-icon:hover {
+  transform: scale(1.7);
+  transition: 0.3s ease;
+  opacity: 100%;
+}
