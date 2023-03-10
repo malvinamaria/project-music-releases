@@ -84,13 +84,6 @@ a:hover {
   gap: 10px;
 }
 
-/* .svg-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
-
 @media (min-width: 667px) and (max-width: 1024px) {
   .album-wrapper {
     grid-template-columns: repeat(2, 1fr);
